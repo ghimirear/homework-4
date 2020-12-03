@@ -1,5 +1,75 @@
-body{
+body{display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    text-align: center;
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+   border: solid 1px black;
+    height: 70%;
+    box-shadow: 0 0 10px 2px rgb(39, 39, 38);
+    border-radius: 10px;
+    background-color: rgb(91, 91, 214);
+    color: white;
+    font-size: 30px;
     
+}
+.quiz-game{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    display: border-box;
+    justify-content: center;
+    text-align: center;
+}
+.answer{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    padding: 10px;
+
+}
+.answer-btn{
+    position: relative;
+    background: linear-gradient(90deg, rgb(0, 5, 250) 0%, rgb(193, 47, 223) 100%);
+    gap : 10px;
+    width: 80%;
+    margin: 10px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.start-btn, .next-btn{
+  background: linear-gradient(90deg, #2626d6 0%, #8866ee 100%);
+  width: 50%;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 10px;
+
+}
+.controls {
+    margin-top: 30px;
+}
+.submit-btn{
+    background: linear-gradient(90deg, #2626d6 0%, #8866ee 100%);
+  width: 200px;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 10px;
+  float: right;
+
+}
+.hide{
+    display: none;
 }
