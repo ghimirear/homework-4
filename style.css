@@ -1,3 +1,9 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
 body{display: flex;
     flex-direction: column;
     padding: 0;
@@ -47,15 +53,21 @@ body{display: flex;
     font-weight: 400;
     font-size: 20px;
     border-radius: 5px;
+   border-style: none;
+    box-shadow: 0 0 2px 1px greenyellow ;
+}
+.answer-btn:hover{
+    color: black;
 }
 .start-btn, .next-btn{
   background: linear-gradient(90deg, #2626d6 0%, #8866ee 100%);
   width: 50%;
   color: whitesmoke;
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 900;
+  font-size: 1.75rem;
   margin: 10px;
-
+  border-style: none;
+  box-shadow: 0 0 10px 2px black ;
 }
 .controls {
     margin-top: 30px;
@@ -67,9 +79,23 @@ body{display: flex;
   font-weight: 500;
   font-size: 1.5rem;
   margin: 10px;
-  float: right;
+  outline: none;
+  border-style: none;
+  box-shadow: 0 0 10px 2px black ;
 
 }
 .hide{
     display: none;
+}
+.instruction{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(6, 248, 6);
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+}
+.timer{
+    float: right;
+    color: rgb(189, 235, 178);
+    
 }

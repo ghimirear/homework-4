@@ -10,31 +10,42 @@
 </head>
 <body>
     <div class="quiz-game">Quiz game</div>
-<div id = "container" class="container">
     
-    <div id = "qustion-container" class="question hide">
-        <div id ="question" class = "hide">Question</div>
-        <div id = "answer" class="answer">
-            <button class = "answer-btn btn ">answer1</button>
-            <button class = "answer-btn btn ">answer2</button>
-            <button class = "answer-btn btn ">answer3</button>
-            <button class = "answer-btn btn ">answer4</button>
+<div id = "container" class="container">
+        <div id = "timer-div" class = " timer hide">
+            <h5> Time Remaining: <span id = "timer"></span> </h5> 
+            
+
         </div>
+    
+    <div id = "question-container" class="question hide">
+        <div id ="question" class = "question">Question</div>
+        
+             <div id = "answer" class="answer"> </div>
+    </div>
+    <div class="instruction" id = "instruction">
+        <h3> Instruction</h3>
+        <p> when you click the start button, question will popup <br>
+            along with the four different choices and you need <br>   to click on the 
+            one button and it will automatically redirect yo to  <br> next question.
+        </p>
+    </div>
         <div id = "controls" class="controls">
-            <button id = "start-btn" class = "start-btn btn ">start</button>
-            <button id = "next-btn" class = "next-btn btn ">next</button>
+            <button  id = "start-btn" class = "start-btn btn ">start</button>
+            <button id = "next-btn" class = "next-btn btn hide">next</button>
         </div>
         <div class="button sub-btn">
-            <button id = "submit" class= "submit-btn btn ">Submit</button>
+            <button id = "submit" class= "submit-btn btn hide">Submit</button>
         </div>
 
-    </div>
+    
 
 </div>
 
 
 
 
-   <script src="script.js"></script> 
+   <script src="script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
 </body>
 </html>
