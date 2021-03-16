@@ -1,4 +1,4 @@
-# homework-4
+# quiz-qpp
 ## second JavaScript homework.
 It was challenging and fun too.
 ![screenShoot](images/Capture.JPG)
